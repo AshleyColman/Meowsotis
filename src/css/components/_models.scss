@@ -1,0 +1,48 @@
+﻿@use '../abstracts/variables' as *;
+.models-container {
+  position: absolute;
+  inset: 0;
+  z-index: $z-characters;
+  pointer-events: none;
+}
+
+.models-image {
+  position: absolute;
+  left: 50%;
+  bottom: -35dvh;              // intentionally off-screen at bottom
+  transform: translateX(-50%);
+  width: clamp(130vw, 200vw, 190vw);
+  max-width: none;             // allow >100% growth
+  height: auto;
+  display: block;
+  z-index: inherit;
+  animation: bounce-mobile 10s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+@keyframes bounce-mobile {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  16.67% {
+    transform: translateX(-50%) translateY(-15px);
+    filter: drop-shadow(0 0 20px $pink-color-1);
+  }
+  33.33% {
+    transform: translateX(-50%) translateY(0);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-15px);
+    filter: drop-shadow(0 0 20px $purple-color);
+  }
+  66.67% {
+    transform: translateX(-50%) translateY(0);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  83.33% {
+    transform: translateX(-50%) translateY(-15px);
+    filter: drop-shadow(0 0 20px $blue-color);
+  }
+}

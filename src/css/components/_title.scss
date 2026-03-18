@@ -1,0 +1,97 @@
+﻿@use '../abstracts/variables' as *;
+
+.title-container {
+  position: absolute;
+  z-index: $z-text;
+  left: 50%;
+  top: 20%; // tune this visually
+  transform: translateX(-50%);
+  width: min(90%, 32rem);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.25rem, 1vh, 0.75rem);
+  text-align: center;
+}
+
+%typeRevealText {
+  -webkit-text-stroke: 2px $white-color;
+  background: linear-gradient(90deg, $pink-color-1 0%, $purple-color 50%, $blue-color 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.title {
+  @extend %typeRevealText;
+  font-size: clamp(2rem, 9vw, 3.5rem);
+  text-transform: uppercase;
+  animation: typeReveal 1.5s steps(20) forwards, shimmer 3s ease-in-out 1.5s infinite;
+}
+
+.subtitle {
+  @extend %typeRevealText;
+  font-size: clamp(1.1rem, 6vw, 2rem);
+  text-transform: uppercase;
+  opacity: 0;
+  animation: typeReveal 1.5s steps(20) 0.5s forwards, shimmer 3s ease-in-out 2s infinite;
+}
+
+.vgen-link {
+  width: 42%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: title-fade-up 0.5s ease 2.2s forwards;
+}
+
+.vgen-image {
+  display: block;
+  max-width: 100%;
+  transform-origin: center;
+  animation: title-glow 1.25s ease-in-out 1.25s infinite;
+  transition: transform $dur-normal $ease-standard, filter $dur-normal $ease-standard;
+}
+
+@keyframes title-fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes title-glow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 4px rgba(129, 201, 247, 0.45));
+  }
+  50% {
+    transform: scale(1.07);
+    filter: drop-shadow(0 0 12px rgba(255, 138, 176, 0.65));
+  }
+}
+
+@keyframes typeReveal {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

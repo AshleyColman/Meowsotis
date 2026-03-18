@@ -1,0 +1,24 @@
+﻿@use '../abstracts/variables' as *;
+
+%border-base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 30px solid;
+}
+
+.static-border {
+  @extend %border-base;
+  width: 100%;
+  border: $border-width solid $pink-color-2;
+  z-index: $z-static-border;
+}
+
+.tilted-border {
+  @extend %border-base;
+  width: 95%;
+  border: $border-width solid $pink-color-1;
+  transform: rotate(5deg);
+  z-index: $z-tilted-border;
+}

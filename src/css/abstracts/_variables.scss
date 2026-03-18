@@ -1,0 +1,36 @@
+﻿$bg-color: #FDF7F9;
+$purple-color: #BF9AD8;
+$pink-color-1: #FF8AB0;
+$pink-color-2: #FFCBDC;
+$blue-color: #81C9F7;
+$white-color: #FFFFFF;
+
+$white-shadow: drop-shadow(10px 10px 0 var(--white-color));
+
+$bp-md: 768px;
+$bp-lg: 1024px;
+
+$z-background: -1;
+$z-static-border: 5;
+$z-shapes-back: 10;
+$z-shapes-middle: 20;
+$z-tilted-border: 30;
+$z-shapes-front: 40;
+$z-characters: 60;
+$z-media-icons: 65;
+$z-text: 70;
+
+$border-width: 30px;
+
+$dur-normal: 0.2s;
+$dur-press: 0.08s;
+$ease-standard: ease;
+
+$social-icon-size: 3rem;
+$social-icon-color: #fff;
+$social-icon-stroke: 1.5px #000;
+$social-icon-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px  1px 0 #000,
+1px  1px 0 #000;
