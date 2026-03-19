@@ -299,7 +299,8 @@ textarea {
   left: 50%;
   bottom: -35dvh;
   transform: translateX(-50%);
-  width: clamp(200px, 100vw, 500px);
+  width: 200vw;
+  max-width: 750px;
   height: auto;
   display: block;
   z-index: inherit;
