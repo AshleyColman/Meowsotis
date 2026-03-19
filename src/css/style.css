@@ -302,11 +302,10 @@ textarea {
   width: 125vw;
   max-width: 500px;
   height: auto;
-  display: block;
+  display: none;
   z-index: inherit;
   animation: bounce-mobile 10s ease-in-out infinite;
   will-change: transform, filter;
-  opacity: 0;
 }
 
 @keyframes bounce-mobile {
