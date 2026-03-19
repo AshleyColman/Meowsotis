@@ -2,10 +2,9 @@
 .models-image {
   position: absolute;
   left: 50%;
-  bottom: -35dvh;              // intentionally off-screen at bottom
+  bottom: -35dvh;
   transform: translateX(-50%);
-  width: clamp(135vw, 175vw, 220vw);
-  max-width: none;             // allow >100% growth
+  width: clamp(200px, 100vw, 500px);
   height: auto;
   display: block;
   z-index: inherit;
@@ -13,6 +12,7 @@
   will-change: transform, filter;
   opacity: 0;
 }
+
 
 @keyframes bounce-mobile {
   0%, 100% {
