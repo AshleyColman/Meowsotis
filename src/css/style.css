@@ -190,7 +190,7 @@ textarea {
   background-color: #FDF7F9;
 }
 
-.models-container {
+#models-container {
   position: absolute;
   inset: 0;
   z-index: 60;
@@ -306,6 +306,7 @@ textarea {
   z-index: inherit;
   animation: bounce-mobile 10s ease-in-out infinite;
   will-change: transform, filter;
+  opacity: 0;
 }
 
 @keyframes bounce-mobile {
