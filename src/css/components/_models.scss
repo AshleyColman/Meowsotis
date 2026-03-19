@@ -1,17 +1,10 @@
 ﻿@use '../abstracts/variables' as *;
-.models-container {
-  position: absolute;
-  inset: 0;
-  z-index: $z-characters;
-  pointer-events: none;
-}
-
 .models-image {
   position: absolute;
   left: 50%;
   bottom: -35dvh;              // intentionally off-screen at bottom
   transform: translateX(-50%);
-  width: clamp(130vw, 200vw, 190vw);
+  width: clamp(135vw, 175vw, 220vw);
   max-width: none;             // allow >100% growth
   height: auto;
   display: block;
