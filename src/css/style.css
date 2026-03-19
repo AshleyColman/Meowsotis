@@ -399,15 +399,5 @@ textarea {
     transform: translateY(0);
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .social-media-container {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-  .social-media-icon {
-    transition: none;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
