@@ -1,4 +1,5 @@
 ﻿@use '../abstracts/variables' as *;
+
 .models-image {
   position: absolute;
   left: 50%;
@@ -12,7 +13,6 @@
   animation: bounce-mobile 10s ease-in-out infinite;
   will-change: transform, filter;
 }
-
 
 @keyframes bounce-mobile {
   0%, 100% {
@@ -38,5 +38,32 @@
   83.33% {
     transform: translateX(-50%) translateY(-15px);
     filter: drop-shadow(0 0 20px $blue-color);
+  }
+}
+
+
+/* Desktop */
+@media (min-width: $bp-lg) {
+
+  .models-image {
+    position: relative;
+    transform: none;
+    left: initial;
+    bottom: initial;
+    max-width: 850px;
+    display: none;
+    z-index: inherit;
+    animation: bounce-desktop 3.5s ease-in-out infinite;
+  }
+}
+
+@keyframes bounce-desktop {
+  0%, 100% {
+    transform: translateY(27%);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    transform: translateY(25%);
+    filter: drop-shadow(0 0 20px $pink-color-1);
   }
 }

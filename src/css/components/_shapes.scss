@@ -91,3 +91,146 @@
   height: 250px;
   z-index: $z-shapes-front;
 }
+
+/* Desktop */
+@media (min-width: $bp-lg) {
+  
+  .circle2,
+  .triangle2,
+  .circle4,
+  .square5,
+  .circle5,
+  .square4,
+  .triangle1 {
+    display: block;
+  }
+
+  .square1, .circle1, .circle2, .dots1, .triangle2,
+  .circle5, .circle4, .square3, .triangle3, .circle6,
+  .square5, .square4, .square2, .triangle1, .circle3 {
+    position: absolute;
+  }
+
+  .square1, .circle1 {
+    z-index: $z-shapes-middle;
+  }
+
+  .circle2, .dots1, .triangle2, .circle5, .circle4, .square3, .triangle3,
+  .circle6, .square5, .square4, .square2, .triangle1 {
+    z-index: $z-shapes-back;
+  }
+
+  .circle3 {
+    z-index: $z-shapes-front;
+  }
+
+  .square1 {
+    right: -100px;
+    top: -100px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .circle1 {
+    right: 25px;
+    top: 25px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle2 {
+    right: 125px;
+    top: -250px;
+    width: 325px;
+    height: 325px;
+  }
+
+  .dots1 {
+    right: 350px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .triangle2 {
+    right: 700px;
+    top: 25px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-45deg);
+  }
+
+  .circle5 {
+    left: 600px;
+    bottom: -100px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .circle4 {
+    left: 400px;
+    top: -100px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .square3 {
+    left: -25px;
+    top: 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .triangle3 {
+    left: 200px;
+    top: 50px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .circle6 {
+    left: 200px;
+    bottom: 50px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .square5 {
+    left: 325px;
+    bottom: 225px;
+    width: 125px;
+    height: 125px;
+    transform: rotate(-10deg);
+  }
+
+  .square4 {
+    left: -25px;
+    bottom: 50px;
+    width: 250px;
+    height: 250px;
+    transform: rotate(45deg);
+  }
+
+  .square2 {
+    right: 200px;
+    bottom: 100px;
+    width: 125px;
+    height: 125px;
+    transform: rotate(25deg);
+  }
+
+  .triangle1 {
+    right: 450px;
+    bottom: 50px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-15deg);
+  }
+
+  .circle3 {
+    right: -125px;
+    bottom: -125px;
+    width: 250px;
+    height: 250px;
+  }
+}
