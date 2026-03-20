@@ -5,7 +5,7 @@ $pink-color-2: #FFCBDC;
 $blue-color: #81C9F7;
 $white-color: #FFFFFF;
 
-$white-shadow: drop-shadow(10px 10px 0 var(--white-color));
+$white-shadow: drop-shadow(10px 10px 0 $white-color);
 
 $bp-md: 768px;
 $bp-lg: 1024px;

@@ -1,0 +1,93 @@
+@use '../abstracts/_variables' as *;
+
+.white-shadow {
+  filter: $white-shadow;
+}
+
+.square1, .circle1 {
+  z-index: $z-shapes-middle;
+}
+
+.dots1, .square3, .triangle3,
+.circle6, .square2 {
+  z-index: $z-shapes-back;
+}
+
+.circle2,
+.triangle2,
+.circle4,
+.square5,
+.circle5,
+.square4,
+.triangle1 {
+  display: none;
+}
+
+.square1 {
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+}
+
+.circle1 {
+  position: absolute;
+  right: 45px;
+  top: 45px;
+  width: 75px;
+  height: 75px;
+}
+
+.dots1 {
+  position: absolute;
+  right: 75px;
+  top: 200px;
+  width: 75px;
+  height: 75px;
+}
+
+.square3 {
+  position: absolute;
+  left: -75px;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  transform: rotate(25deg);
+}
+
+.triangle3 {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  width: 75px;
+  height: 75px;
+  transform: rotate(45deg);
+}
+
+.circle6 {
+  position: absolute;
+  left: 100px;
+  bottom: 80px;
+  width: 125px;
+  height: 125px;
+}
+
+.square2 {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 125px;
+  height: 125px;
+  transform: rotate(25deg);
+}
+
+.circle3 {
+  position: absolute;
+  right: -125px;
+  bottom: -125px;
+  width: 250px;
+  height: 250px;
+  z-index: $z-shapes-front;
+}
