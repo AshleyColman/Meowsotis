@@ -1,5 +1,4 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded');
     let currentIndex = 0;
     const mobileBreakpoint = 'mobile';
     const desktopBreakpoint = 'desktop';
@@ -19,7 +18,7 @@
 
         return modelsContainer.querySelectorAll(imageQuerySelector);
     }
-
+    
     function fadeIn(el, duration) {
         return new Promise(resolve => {
             el.style.display = 'block';
