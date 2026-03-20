@@ -51,26 +51,26 @@
                 }
             }
         },
-        interactivity: {
-            events: {
-                onClick: {
-                    enable: true,
-                    mode: "attract"
-                },
-                onHover: {
-                    enable: true,
-                    mode: "bubble"
-                }
-            },
-            modes: {
-                bubble: {
-                    distance: 100,
-                    duration: 0.4,
-                    size: 10,
-                    opacity: 1
-                }
-            }
-        }
+        // interactivity: {
+        //     events: {
+        //         onClick: {
+        //             enable: true,
+        //             mode: "attract"
+        //         },
+        //         onHover: {
+        //             enable: true,
+        //             mode: "bubble"
+        //         }
+        //     },
+        //     modes: {
+        //         bubble: {
+        //             distance: 100,
+        //             duration: 0.4,
+        //             size: 10,
+        //             opacity: 1
+        //         }
+        //     }
+        // }
     };
 
     tsParticles.load("tsparticles", options);

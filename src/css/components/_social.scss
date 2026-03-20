@@ -10,7 +10,6 @@
   bottom: 0;
   width: 100%;
   z-index: $z-media-icons;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +17,6 @@
   gap: clamp(1rem, 15vw, 8rem);
   padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
   text-align: center;
-
   opacity: 0;
   transform: translateY(10px);
   animation: social-fade-up 0.5s ease 2.2s forwards;
@@ -57,4 +55,36 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+/* Desktop */
+@media (min-width: $bp-lg) {
+  
+  .social-handle {
+    display: block;
+  }
+
+  .social-media-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: $z-media-icons;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: initial;
+    text-align: center;
+    opacity: 0;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    animation: social-fade-up 0.5s ease 2.2s forwards;
+  }
+
+  .social-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
 }

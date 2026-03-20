@@ -22,3 +22,13 @@
   transform: rotate(5deg);
   z-index: $z-tilted-border;
 }
+
+
+/* Desktop */
+@media (min-width: $bp-lg) {
+  
+  .tilted-border {
+    width: 98%;
+  }
+  
+}
