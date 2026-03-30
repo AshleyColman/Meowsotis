@@ -34,3 +34,14 @@ $social-icon-shadow:
 1px -1px 0 #000,
 -1px  1px 0 #000,
 1px  1px 0 #000;
+
+$fs-xs: 0.75rem;   // 12px - fine print, captions
+$fs-sm: 0.875rem;  // 14px - small text, labels
+$fs-base: 1rem;    // 16px - body text
+$fs-md: 1.125rem;  // 18px - slightly larger body
+$fs-lg: 1.25rem;   // 20px - subheadings
+$fs-xl: 1.5rem;    // 24px - section headings
+$fs-2xl: 2rem;     // 32px - page headings
+$fs-3xl: 2.5rem;   // 40px - large hero text
+$fs-4xl: 3rem;     // 48px - display text
+$fs-5xl: 4rem;     // 64px - oversized hero
