@@ -15,6 +15,13 @@
   z-index: $z-static-border;
 }
 
+.thin-static-border {
+  @extend %border-base;
+  width: 100%;
+  border: $thin-border-width solid $pink-color-2;
+  z-index: $z-static-border;
+}
+
 .tilted-border {
   @extend %border-base;
   width: 95%;
