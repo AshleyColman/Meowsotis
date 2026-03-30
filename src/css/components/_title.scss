@@ -28,6 +28,7 @@
   font-size: clamp(2rem, 9vw, 3.5rem);
   text-transform: uppercase;
   animation: typeReveal 1.5s steps(20) forwards, shimmer 3s ease-in-out 1.5s infinite;
+  z-index: $z-text;
 }
 
 .subtitle {
@@ -36,6 +37,7 @@
   text-transform: uppercase;
   opacity: 0;
   animation: typeReveal 1.5s steps(20) 0.5s forwards, shimmer 3s ease-in-out 2s infinite;
+  z-index: $z-text;
 }
 
 .vgen-link {
@@ -55,6 +57,15 @@
   transform-origin: center;
   animation: title-glow 1.25s ease-in-out 1.25s infinite;
   transition: transform $dur-normal $ease-standard, filter $dur-normal $ease-standard;
+}
+
+.flower {
+  position: absolute;
+  top: -12%;
+  left: 0;
+  max-width: 25%;
+  filter: opacity(0.5) drop-shadow(0 0 0 $white-color);
+  z-index: $z-shapes-back;
 }
 
 @keyframes title-fade-up {
