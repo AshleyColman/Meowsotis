@@ -20,18 +20,21 @@
   align-items: center;
   background-color: $bg-color;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .avatar {
-  width: 175px;          /* adjust as needed */
-  height: 175px;         /* keep equal to width for a perfect circle */
-  border-radius: 50%;    /* makes it round */
-  border: 4px solid $white-color; /* white border */
-  object-fit: cover;     /* ensures the image fills the circle nicely */
+  width: 175px; 
+  height: 175px;    
+  border-radius: 50%; 
+  border: 4px solid $white-color; 
+  object-fit: cover; 
+  z-index: $z-avatar;
 }
 
 .about-text {
   text-align: center;
+  z-index: $z-text;
 }
 
 .about-text-heading {
