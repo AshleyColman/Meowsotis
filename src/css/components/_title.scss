@@ -64,8 +64,8 @@
   top: -12%;
   left: 0;
   max-width: 25%;
-  filter: opacity(0.5) drop-shadow(0 0 0 $white-color);
   z-index: $z-shapes-back;
+  animation: typeReveal 1.5s steps(20) forwards;
 }
 
 @keyframes title-fade-up {
