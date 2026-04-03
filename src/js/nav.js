@@ -1,32 +1,31 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
-   
     const navSwitch = document.querySelector('#nav-switch');
     const header = document.querySelector('#header');
-    
-    console.log(navSwitch);
-    
-    if (!navSwitch || !header)
-        return;
-    
+
+    if (!navSwitch || !header) return;
+
     const fadeInClass = 'fadeIn';
     const fadeOutClass = 'fadeOut';
-    
-    console.log('clicked');
-    
+
     navSwitch.addEventListener('click', () => {
-        
-        if (!header.classList.contains(fadeInClass) && !header.classList.contains(fadeOutClass)) {
+        const isHidden = getComputedStyle(header).display === 'none';
+
+        if (isHidden) {
+            // Make it render first, then fade in.
+            header.style.display = 'block';
+            header.classList.remove(fadeOutClass);
             header.classList.add(fadeInClass);
-            return;
-        }
-        
-        if (header.classList.contains(fadeInClass)) {
+        } else {
+            // Fade out, then hide after animation ends.
             header.classList.remove(fadeInClass);
             header.classList.add(fadeOutClass);
         }
-        else if (header.classList.contains(fadeOutClass)) {
+    });
+
+    header.addEventListener('animationend', (event) => {
+        if (event.animationName === 'fadeOut' && header.classList.contains(fadeOutClass)) {
+            header.style.display = 'none';
             header.classList.remove(fadeOutClass);
-            header.classList.add(fadeInClass);
         }
     });
 });

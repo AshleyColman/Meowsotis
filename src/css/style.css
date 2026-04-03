@@ -832,6 +832,7 @@ textarea {
 }
 
 #header {
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -862,12 +863,6 @@ textarea {
   margin: 0;
 }
 
-.nav-item-text {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .header-logo {
   width: clamp(325px, 60vw, 600px);
   min-width: 325px;
@@ -882,6 +877,54 @@ textarea {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.nav-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: transform 0.08s ease;
+}
+.nav-item:hover .nav-item-text {
+  color: #FFFFFF;
+}
+.nav-item:hover .nav-item-text::after {
+  width: 100%;
+}
+.nav-item:active {
+  transform: translateY(1px);
+}
+.nav-item:active .nav-item-text {
+  transform: scale(0.99);
+}
+
+.nav-item-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding: 8px 16px;
+  transition: color 0.2s ease, transform 0.08s ease;
+}
+.nav-item-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000000;
+  transition: width 0.2s ease;
+  z-index: -1;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .header-container {
+    justify-content: center;
+  }
+  .nav-menu {
+    gap: 0.25rem;
   }
 }
 
