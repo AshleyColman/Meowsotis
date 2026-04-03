@@ -6,6 +6,30 @@
   user-select: none;
 }
 
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 *,
 *::before,
 *::after {
@@ -783,7 +807,7 @@ textarea {
     font-size: clamp(1rem, 4.8vw, 1.25rem);
   }
 }
-#nav_switch {
+#nav-switch {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -792,17 +816,64 @@ textarea {
   transform: translate3d(0, 0, 0);
   cursor: pointer;
 }
-#nav_switch::after {
+#nav-switch::after {
   content: "";
   position: fixed;
-  top: -95px;
-  right: -95px;
   z-index: 0;
   display: block;
-  width: 250px;
-  height: 250px;
+  --flower-size: clamp(150px, 25vw, 250px);
+  --flower-offset: calc(var(--flower-size) * -0.44);
+  width: var(--flower-size);
+  height: var(--flower-size);
+  top: var(--flower-offset);
+  right: var(--flower-offset);
   background: url(../assets/images/shapes/white-flower.webp) no-repeat right top/100% auto;
   animation: bg_nav_rotate 30s linear infinite;
+}
+
+#header {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 90;
+  opacity: 1;
+  background-color: #FFFFFF;
+}
+
+.header-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 3vh, 2rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-logo {
+  width: clamp(325px, 60vw, 600px);
+  min-width: 325px;
+  max-width: 600px;
+  flex-shrink: 0;
+  height: auto;
 }
 
 @keyframes bg_nav_rotate {
