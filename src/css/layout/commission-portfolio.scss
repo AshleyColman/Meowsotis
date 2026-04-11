@@ -1,23 +1,24 @@
 ﻿@use '../abstracts/variables' as *;
 
 .portfolio-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  min-height: 100%;
   overflow-x: clip;
-  background-color: $purple-color;
+  background-color: #BF9AD8;
 }
 
 .portfolio-content {
   position: relative;
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   z-index: $z-portfolio;
+  flex: 1;
 }
 
 .portfolio-header {
@@ -34,6 +35,7 @@
   font-size: $fs-2xl;
   text-align: center;
   text-transform: uppercase;
+  -webkit-text-stroke: 2px $white-color;
 }
 
 .portfolio-subtitle {
@@ -67,8 +69,8 @@
 }
 
 .grid-item {
-  flex: 1 1 calc(50% - 1rem);
-  max-width: calc(50% - 1rem);
+  flex: 1 1 calc(100% - 1rem);
+  max-width: calc(100% - 1rem);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -101,6 +103,10 @@
 .grid-item-text {
   font-size: $fs-sm;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 @media (min-width: $bp-md) {
