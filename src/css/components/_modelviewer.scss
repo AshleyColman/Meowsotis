@@ -1,0 +1,46 @@
+﻿@use "../abstracts/variables" as *;
+
+@use "../abstracts/variables" as *;
+
+.modelviewer {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Ensure flexbox is active */
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($black-color, 0.9);
+  position: fixed;
+  top: 0; /* Ensure it starts at the top of the viewport */
+  left: 0; /* Ensure it starts at the left of the viewport */
+  z-index: $z-modelviewer;
+}
+
+.modelviewer .sketchfab-embed-wrapper {
+  width: 90%; /* Full width of the container */
+  height: 90%; /* Full height of the container */
+  position: relative;
+}
+
+.modelviewer .sketchfab-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the iframe fill the wrapper */
+  height: 100%; /* Make the iframe fill the wrapper */
+  box-shadow: $box-shadow;
+  border-radius: 20px;
+  border: 2px solid $black-color;
+}
+
+.modelviewer-close-button {
+    position: absolute;
+    bottom: 0;
+    right: translateX(-50%);
+    background-color: rgba($white-color, 0.8);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: $fs-lg;
+}
