@@ -13,6 +13,7 @@
   top: 0; /* Ensure it starts at the top of the viewport */
   left: 0; /* Ensure it starts at the left of the viewport */
   z-index: $z-modelviewer;
+  display: none;
 }
 
 #modelviewer .sketchfab-embed-wrapper {
