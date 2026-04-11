@@ -52,7 +52,7 @@
 
         <div class="portfolio-works">
             <section class="portfolio-section">
-                <div class="grid">
+                <div id="portfolio-grid" class="grid">
                     <div class="grid-item">
                         <img class="grid-item-image" src="assets/images/portfolio/kangel.webp" alt="k-angle 3d character model">
                         <p class="grid-item-text">Kangle || 3D MODEL</p>
@@ -79,11 +79,10 @@
 
     </div>
 
-    <div class="modelviewer">
-        <button class="modelviewer-close-button">Close</button>
+    <div id="modelviewer">
+        <button id="modelviewer-close-button">Close</button>
         <div class="sketchfab-embed-wrapper">
-            <iframe title="" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
-                    src="https://sketchfab.com/models/bfb0edf40ad44c0290243ef878bccd96/embed?ui_theme=dark&dnt=1&transparent=1&autospin=1&autostart=1">
+            <iframe id="sketchfab-embed-iframe" title="" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share
                     src="https://sketchfab.com/models/bfb0edf40ad44c0290243ef878bccd96/embed?ui_theme=dark&dnt=1&transparent=1&autospin=1&autostart=1">
             </iframe>
         </div>
@@ -96,6 +95,7 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
     <script type="application/javascript" src="js/tsparticles-settings.js"></script>
     <script type="application/javascript" src="js/nav.js"></script>
+    <script type="application/javascript" src="js/modelviewer.js"></script>
 
 </div>
 </body>

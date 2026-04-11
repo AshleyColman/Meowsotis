@@ -1074,7 +1074,7 @@ textarea {
   color: #FFFFFF;
 }
 
-.modelviewer {
+#modelviewer {
   width: 100vw; /* Full viewport width */
   height: 100vh; /* Full viewport height */
   display: flex; /* Ensure flexbox is active */
@@ -1087,13 +1087,13 @@ textarea {
   z-index: 105;
 }
 
-.modelviewer .sketchfab-embed-wrapper {
+#modelviewer .sketchfab-embed-wrapper {
   width: 90%; /* Full width of the container */
   height: 90%; /* Full height of the container */
   position: relative;
 }
 
-.modelviewer .sketchfab-embed-wrapper iframe {
+#modelviewer .sketchfab-embed-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -1104,7 +1104,7 @@ textarea {
   border: 2px solid #000000;
 }
 
-.modelviewer-close-button {
+#modelviewer-close-button {
   position: absolute;
   bottom: 0;
   right: translateX(-50%);
