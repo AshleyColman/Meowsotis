@@ -14,8 +14,6 @@
     position: fixed;
     z-index: 0;
     display: block;
-
-    // One source of truth
     --flower-size: clamp(150px, 25vw, 250px);
     --flower-offset: calc(var(--flower-size) * -0.44);
 
@@ -56,7 +54,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(1rem, 3vh, 2rem); // scales with viewport HEIGHT
+  gap: clamp(1rem, 3vh, 2rem);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -66,7 +64,7 @@
   width: clamp(325px, 60vw, 600px);
   min-width: 325px;
   max-width: 600px;
-  flex-shrink: 0; // important if this is a flex item
+  flex-shrink: 0;
   height: auto;
 }
 
@@ -95,7 +93,7 @@
   }
 
   &:active {
-    transform: translateY(1px); // clean button press feel
+    transform: translateY(1px);
   }
 
   &:active .nav-item-text {
@@ -109,6 +107,8 @@
   text-align: center;
   position: relative;
   padding: 8px 16px;
+  text-decoration: none;
+  color: inherit;
   transition: color $dur-normal $ease-standard, transform $dur-press $ease-standard;
 
   &::after {
