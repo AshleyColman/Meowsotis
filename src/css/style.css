@@ -897,16 +897,10 @@ textarea {
 }
 .translate-text-button:hover {
   transform: scale(1.2);
-  color: #FFFFFF;
-  outline: black;
 }
 .translate-text-button:active {
   transform: translateY(1px) scale(0.94);
   transition-duration: 0.08s;
-}
-.translate-text-button:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 4px;
 }
 
 /* Desktop */

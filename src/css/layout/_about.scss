@@ -128,18 +128,11 @@
 
   &:hover {
     transform: scale(1.2);
-    color: $white-color;
-    outline: black;
   }
 
   &:active {
     transform: translateY(1px) scale(0.94);
     transition-duration: $dur-press;
-  }
-
-  &:focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 4px;
   }
 }
 
