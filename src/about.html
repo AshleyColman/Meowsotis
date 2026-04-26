@@ -1,40 +1,125 @@
-﻿<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--    <title>About me - Meovvsotis 3D Artist</title>-->
-<!--    <link rel="icon" type="image/png" href="assets/images/icons/falin.webp"/>-->
-<!--    <link rel="stylesheet" href="css/style.css">-->
-<!--</head>-->
-<!--<body>-->
-<!--<div class="about-container">-->
-<!--    <div id="tsparticles" class="thin-static-border"></div>-->
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Meovvsotis 3D Artist</title>
+    <link rel="icon" type="image/png" href="assets/images/icons/falin.webp"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="about-container">
+    <div id="tsparticles"></div>
 
-<!--    <div class="pattern-cover"></div>-->
+    <!-- Navigation -->
+    <div id="nav-switch"></div>
+    <header id="header">
+        <div class="header-container">
+            <img class="header-logo no-select" src="assets/images/icons/logo.webp" alt="meovvsotis 3d artist logo"/>
+            <nav id="nav">
+                <ul class="nav-menu">
+                    <li class="nav-item no-select">
+                        <a href="index.html" class="nav-item-text no-select">Home</a>
+                    </li>
+                    <li class="nav-item no-select">
+                        <a href="about.html" class="nav-item-text no-select">About Me</a>
+                    </li>
+                    <li class="nav-item no-select">
+                        <a href="personal-portfolio.html" class="nav-item-text no-select">Personal Portfolio</a>
+                    </li>
+                    <li class="nav-item no-select">
+                        <a href="commission-portfolio.html" class="nav-item-text no-select">Commission Portfolio</a>
+                    </li>
+                    <li class="nav-item no-select">
+                        <a href="downloads.html" class="nav-item-text no-select">Downloads</a>
+                    </li>
+                    <li class="nav-item no-select">
+                        <a href="terms.html" class="nav-item-text no-select">Terms</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-<!--    <div class="about-content">-->
-<!--        <div class="about-section-1">-->
-<!--            <img class="avatar" src="assets/images/icons/falin.webp" alt="falin dungeon meshi profile picture"/>-->
-<!--            <p class="about-text about-text-heading">I'm Maeve</p>-->
-<!--            <p class="about-text about-text-subheading"> Sometimes I make 3D models.</p>-->
-<!--            <p class="about-text">◤She / They ・20s・🌈・ENG + 日本語OK</p>-->
-<!--            <p class="about-text">If you're able to find something you enjoy in the stuff I post, it would make me very happy!</p>-->
-<!--            <p class="about-text">-->
-<!--                名前はナナ、モデラー名はMeovvsotis-->
-<!--                とりあえず、最近3Dに興味湧いた生き物、です。-->
-<!--            </p>-->
-<!--            <p class="about-text">上手じゃいないけど、ものを作るのが好きでね。</p>-->
-<!--            <p class="about-text">-->
-<!--                投稿してる作品の中で、-->
-<!--                なんか使えるものを見つけたら-->
-<!--                こちらも大変嬉しく感じます。-->
-<!--            </p>-->
+    </header>
+    <div class="pattern-cover"></div>
+    <div class="about-header">
+        <h1 class="about-title">About Me</h1>
+        <p class="about-subtitle">Professional 3D Artist for Hire</p>
+    </div>
+    
+    <div class="about-content">
+        <div class="two-column">
+            <div class="right-column">
+                <img class="profile-picture" src="assets/images/icons/falin.webp" alt="falin dungeon meshi profile picture"/>
+                <div class="profile-picture-summary">
+                    <img class="flag" src="assets/images/icons/scotland.webp" alt="scotland flag">
+                    <p>Nice to meet you, I'm Meave</p>
+                </div>
+            </div>
+            <div class="left-column">
+                <div id="english-text" class="about-text-container">
+                    <i class="fa-solid fa-language translate-text-button"></i>
+                    <p class="about-text-paragraph">
+                        I'm Nana or Eve, though I usually go by my username - Meovvsotis.
+                    </p>
+                    <p class="about-text-paragraph">
+                        I make 3d models sometimes
+                    </p>
+                    <p class="about-text-paragraph">
+                        If you're able to find something you enjoy in the stuff I post, it would make me very happy!
+                    </p>
+                    <p class="about-text-paragraph italic">
+                        DNI if (PRO)MAP / PROSHIP / TERF / ANTI-BLM / ect, you know who you are.
+                    </p>
+                </div>
+                <div id="japanese-text" class="about-text-container">
+                    <i class="fa-solid fa-language translate-text-button"></i>
+                    <p class="about-text-paragraph">
+                        名前はナナ、モデラー名はMeovvsotis
+                        <br>
+                        とりあえず、最近3Dに興味湧いた生き物、です。
+                    </p>
+                    <p class="about-text-paragraph">
+                        上手じゃいないけど、ものを作るのが好きでね。
+                    </p>
+                    <p class="about-text-paragraph">
+                        投稿してる作品の中で、
+                        <br>
+                        なんか使えるものを見つけたら
+                        <br>
+                        こちらも大変嬉しく感じます
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!--        &lt;!&ndash; Socials &ndash;&gt;-->
+<!--        <div class="social-media-container">-->
+<!--            <div class="social-group">-->
+<!--                <a href="https://www.deviantart.com/meovvsotis"><i-->
+<!--                        class="fa-brands fa-deviantart social-media-icon hover-pink"></i></a>-->
+<!--                <span class="social-handle no-select">@MEOVVSOTIS</span>-->
+<!--            </div>-->
+<!--            <div class="social-group">-->
+<!--                <a href="https://x.com/Meovvsotis"><i class="fa-brands fa-x-twitter social-media-icon hover-purple"></i></a>-->
+<!--                <span class="social-handle no-select">@MEOVVSOTIS</span>-->
+<!--            </div>-->
+<!--            <div class="social-group">-->
+<!--                <a href="https://ko-fi.com/meovvsotis"><i class="fa-solid fa-heart social-media-icon hover-blue"></i></a>-->
+<!--                <span class="social-handle no-select">@MEOVVSOTIS</span>-->
+<!--            </div>-->
 <!--        </div>-->
-<!--    </div>-->
-<!--    -->
-<!--    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>-->
-<!--    <script type="application/javascript" src="js/tsparticles-settings.js"></script>-->
-<!--</div>-->
-<!--</body>-->
-<!--</html>-->
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">© 2026 Meovvsotis. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script type="application/javascript" src="js/tsparticles-settings.js"></script>
+    <script type="application/javascript" src="js/nav.js"></script>
+    <script type="application/javascript" src="js/about.js"></script>
+    <script src="https://kit.fontawesome.com/142b4f2a8b.js" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
