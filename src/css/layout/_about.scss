@@ -53,7 +53,7 @@
 }
 
 .left-column {
-  width: 45%;
+  width: 100%;
   background-color: $blue-color;
   box-shadow: $box-shadow;
   border-radius: 20px;
@@ -61,7 +61,7 @@
 }
 
 .right-column {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,17 +72,17 @@
 .profile-picture {
   box-shadow: $box-shadow;
   border: 2px solid $black-color;
-  max-width: 200px;
+  max-width: 150px;
   border-radius: 50%;
 }
 
 .profile-picture-summary {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-
 
 .flag {
   max-width: 50px;
@@ -140,5 +140,22 @@
   &:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 4px;
+  }
+}
+
+
+/* Desktop */
+@media (min-width: $bp-lg) {
+
+  .profile-picture {
+    max-width: 200px;
+  }
+
+  .right-column {
+    width: 50%;
+  }
+
+  .left-column {
+    width: 50%;
   }
 }

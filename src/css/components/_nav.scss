@@ -8,6 +8,7 @@
   width: 90px;
   transform: translate3d(0, 0, 0);
   cursor: pointer;
+  transition: transform $dur-normal $ease-standard, color $dur-normal $ease-standard;
 
   &::after {
     content: "";
@@ -26,6 +27,14 @@
     animation: bg_nav_rotate 30s linear infinite;
   }
 
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: translateY(1px) scale(0.94);
+    transition-duration: $dur-press;
+  }
 }
 
 #header {

@@ -193,6 +193,10 @@ textarea {
   font: inherit;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .tilted-border, .thin-static-border, .static-border {
   position: absolute;
   top: 0;
@@ -818,7 +822,7 @@ textarea {
 }
 
 .left-column {
-  width: 45%;
+  width: 100%;
   background-color: #81C9F7;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
@@ -826,7 +830,7 @@ textarea {
 }
 
 .right-column {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -837,13 +841,14 @@ textarea {
 .profile-picture {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   border: 2px solid #000000;
-  max-width: 200px;
+  max-width: 150px;
   border-radius: 50%;
 }
 
 .profile-picture-summary {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
@@ -904,6 +909,18 @@ textarea {
   outline-offset: 4px;
 }
 
+/* Desktop */
+@media (min-width: 1024px) {
+  .profile-picture {
+    max-width: 200px;
+  }
+  .right-column {
+    width: 50%;
+  }
+  .left-column {
+    width: 50%;
+  }
+}
 #nav-switch {
   position: fixed;
   z-index: 100;
@@ -912,6 +929,7 @@ textarea {
   width: 90px;
   transform: translate3d(0, 0, 0);
   cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 #nav-switch::after {
   content: "";
@@ -926,6 +944,13 @@ textarea {
   right: var(--flower-offset);
   background: url(../assets/images/shapes/white-flower.webp) no-repeat right top/100% auto;
   animation: bg_nav_rotate 30s linear infinite;
+}
+#nav-switch:hover {
+  transform: scale(1.2);
+}
+#nav-switch:active {
+  transform: translateY(1px) scale(0.94);
+  transition-duration: 0.08s;
 }
 
 #header {
