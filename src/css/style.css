@@ -315,14 +315,14 @@ textarea {
 }
 
 .title {
-  font-size: clamp(2rem, 11vw, 3.5rem);
+  font-size: clamp(2rem, 9vw, 3.5rem);
   text-transform: uppercase;
   animation: typeReveal 1.5s steps(20) forwards, shimmer 3s ease-in-out 1.5s infinite;
   z-index: 70;
 }
 
 .subtitle {
-  font-size: clamp(1.1rem, 9vw, 2rem);
+  font-size: clamp(1.1rem, 6vw, 2rem);
   text-transform: uppercase;
   opacity: 0;
   animation: typeReveal 1.5s steps(20) 0.5s forwards, shimmer 3s ease-in-out 2s infinite;
@@ -491,6 +491,7 @@ textarea {
   text-align: center;
   transform: translateY(10px);
   opacity: 1;
+  padding-bottom: 1rem;
 }
 .social-media-container.with-safe-padding {
   padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
@@ -561,7 +562,6 @@ textarea {
     text-align: center;
     opacity: 1;
     gap: 2rem;
-    padding-bottom: 1rem;
   }
   .social-media-container.with-safe-padding {
     padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
