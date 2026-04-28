@@ -1,0 +1,30 @@
+﻿@use '../abstracts/variables' as *;
+
+.pattern-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+                  -45deg,
+                  transparent,
+                  transparent 20px,
+                  rgba(255, 255, 255, 0.15) 20px,
+                  rgba(255, 255, 255, 0.15) 40px
+  );
+  z-index: $z-shapes-front;
+  pointer-events: none; /* Prevent it from blocking clicks */
+}
+
+.dot-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 2.5px);
+  background-size: 20px 20px;
+  z-index: $z-shapes-front;
+  pointer-events: none;
+}

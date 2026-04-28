@@ -230,6 +230,29 @@ textarea {
     width: 98%;
   }
 }
+.pattern-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.15) 20px, rgba(255, 255, 255, 0.15) 40px);
+  z-index: 40;
+  pointer-events: none; /* Prevent it from blocking clicks */
+}
+
+.dot-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 2.5px);
+  background-size: 20px 20px;
+  z-index: 40;
+  pointer-events: none;
+}
+
 .home-container {
   position: relative;
   width: 100%;
@@ -244,17 +267,6 @@ textarea {
   height: 100%;
   z-index: 60;
   pointer-events: none;
-}
-
-.pattern-cover {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.15) 20px, rgba(255, 255, 255, 0.15) 40px);
-  z-index: 40;
-  pointer-events: none; /* Prevent it from blocking clicks */
 }
 
 /* Desktop */
@@ -1180,6 +1192,7 @@ textarea {
   align-items: center;
   color: #FFFFFF;
   margin-top: 2rem;
+  z-index: 39;
 }
 
 .footer-text {
