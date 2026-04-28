@@ -9,11 +9,11 @@
 }
 
 .personal-portfolio-container {
-  background-color: $purple-color;
+  background: $bg-gradient;
 }
 
 .commission-portfolio-container {
-  background-color: $pink-color-1;
+  background: $bg-gradient;
 }
 
 .portfolio-content {
@@ -26,28 +26,6 @@
   align-items: center;
   z-index: $z-portfolio;
   flex: 1;
-}
-
-.portfolio-header {
-  width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.portfolio-title {
-  font-size: $fs-2xl;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-text-stroke: 2px $white-color;
-}
-
-.portfolio-subtitle {
-  font-size: $fs-lg;
-  text-align: center;
 }
 
 .portfolio-works {

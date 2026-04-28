@@ -769,13 +769,50 @@ textarea {
     height: 250px;
   }
 }
+.top {
+  width: 100%;
+  padding: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-title {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #FFFFFF;
+}
+
+.top-subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.top-logo-container {
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+.top-logo {
+  max-width: 150px;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .top-logo {
+    max-width: 250px;
+  }
+}
 .about-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
   overflow-x: clip;
-  background-color: #81C9F7;
+  background: linear-gradient(135deg, #81C9F7, #FF8AB0, #BF9AD8);
 }
 
 .about-content {
@@ -788,28 +825,6 @@ textarea {
   align-items: center;
   z-index: 80;
   flex: 1;
-}
-
-.about-header {
-  width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.about-title {
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-text-stroke: 2px #FFFFFF;
-}
-
-.about-subtitle {
-  font-size: 1.25rem;
-  text-align: center;
 }
 
 .two-column {
@@ -868,7 +883,6 @@ textarea {
 
 .about-text-paragraph {
   text-align: center;
-  font-size: 0.75rem;
 }
 
 .about-text-image {
@@ -1055,11 +1069,11 @@ textarea {
 }
 
 .personal-portfolio-container {
-  background-color: #BF9AD8;
+  background: linear-gradient(135deg, #81C9F7, #FF8AB0, #BF9AD8);
 }
 
 .commission-portfolio-container {
-  background-color: #FF8AB0;
+  background: linear-gradient(135deg, #81C9F7, #FF8AB0, #BF9AD8);
 }
 
 .portfolio-content {
@@ -1072,28 +1086,6 @@ textarea {
   align-items: center;
   z-index: 80;
   flex: 1;
-}
-
-.portfolio-header {
-  width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.portfolio-title {
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-text-stroke: 2px #FFFFFF;
-}
-
-.portfolio-subtitle {
-  font-size: 1.25rem;
-  text-align: center;
 }
 
 .portfolio-works {

@@ -1,0 +1,41 @@
+﻿@use '../abstracts/variables' as *;
+
+.top {
+  width: 100%;
+  padding: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-title {
+  font-size: $fs-2xl;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px $white-color;
+}
+
+.top-subtitle {
+  font-size: $fs-lg;
+  text-align: center;
+}
+
+.top-logo-container {
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+.top-logo {
+  max-width: 150px;
+}
+
+/* Desktop */
+@media (min-width: $bp-lg) {
+
+  .top-logo {
+    max-width: 250px;
+  }
+
+}

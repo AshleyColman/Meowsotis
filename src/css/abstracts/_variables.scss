@@ -6,6 +6,15 @@ $blue-color: #81C9F7;
 $white-color: #FFFFFF;
 $black-color: #000000;
 
+$pastel-pink-color: mix($pink-color-1, $white-color, 70%);
+$pastel-blue-color: mix($blue-color, $white-color, 70%);
+$pastel-purple-color:  mix($purple-color, $white-color, 70%);
+
+$bg-gradient: linear-gradient(135deg, $blue-color, $pink-color-1, $purple-color);
+
+$pastel-bg-gradient: linear-gradient(135deg, $pastel-blue-color, $pastel-pink-color, $pastel-purple-color);
+
+
 $white-shadow: drop-shadow(10px 10px 0 $white-color);
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 
