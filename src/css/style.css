@@ -481,9 +481,6 @@ textarea {
 }
 
 .social-media-container {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
   z-index: 65;
   display: flex;
@@ -491,10 +488,20 @@ textarea {
   align-items: center;
   flex-wrap: wrap;
   gap: clamp(1rem, 15vw, 8rem);
-  padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
   text-align: center;
-  opacity: 0;
   transform: translateY(10px);
+  opacity: 1;
+}
+.social-media-container.with-safe-padding {
+  padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+}
+.social-media-container.absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.social-media-container.animate {
+  opacity: 0;
   animation: social-fade-up 0.5s ease 2.2s forwards;
 }
 
@@ -546,18 +553,28 @@ textarea {
     display: block;
   }
   .social-media-container {
-    position: absolute;
     width: 100%;
-    bottom: 0;
     z-index: 65;
     display: flex;
-    justify-content: end;
     align-items: center;
     flex-wrap: initial;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     gap: 2rem;
     padding-bottom: 1rem;
+  }
+  .social-media-container.with-safe-padding {
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+  }
+  .social-media-container.absolute {
+    position: absolute;
+    bottom: 0;
+  }
+  .social-media-container.flex-end {
+    justify-content: flex-end;
+  }
+  .social-media-container.animate {
+    opacity: 0;
     animation: social-fade-up 0.5s ease 2.2s forwards;
   }
   .social-group {
