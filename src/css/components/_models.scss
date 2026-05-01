@@ -10,7 +10,7 @@
   height: auto;
   display: none;
   z-index: inherit;
-  animation: bounce-mobile 10s ease-in-out infinite;
+  animation: bounce-mobile 10s ease-in-out infinite,  fade-in-out-desktop 5s ease-in infinite;
   will-change: transform, filter;
 }
 
