@@ -463,7 +463,7 @@ textarea {
     max-width: 850px;
     display: none;
     z-index: inherit;
-    animation: bounce-desktop 3.5s ease-in-out infinite;
+    animation: bounce-desktop 3.5s ease-in-out infinite, fade-in-out-desktop 5s ease-in infinite;
   }
 }
 @keyframes bounce-desktop {
@@ -474,6 +474,23 @@ textarea {
   50% {
     transform: translateY(25%);
     filter: drop-shadow(0 0 20px #FF8AB0);
+  }
+}
+@keyframes fade-in-out-desktop {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 100;
+  }
+  75% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .social-handle {
