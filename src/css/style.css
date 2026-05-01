@@ -1286,4 +1286,91 @@ textarea {
   outline-offset: 4px;
 }
 
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #81C9F7, #FF8AB0, #BF9AD8);
+  background-size: 300% 300%;
+  animation: gradient-shift 6s infinite ease-in-out;
+  overflow: hidden;
+  z-index: 110;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  overflow: hidden;
+  white-space: normal;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #FFFFFF;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#loading-overlay {
+  animation: gradient-shift 6s infinite ease-in-out;
+}
+
+#loading-overlay.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .loading-text {
+    font-size: 2rem;
+    white-space: nowrap;
+    text-align: left;
+    border-right: 2px solid #FFFFFF;
+    animation: blink 0.5s step-end infinite;
+    padding: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
