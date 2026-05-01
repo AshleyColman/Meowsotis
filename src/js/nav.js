@@ -6,20 +6,24 @@
 
     const fadeInClass = 'fadeIn';
     const fadeOutClass = 'fadeOut';
+    let isAnimating = false;
 
     navSwitch.addEventListener('click', () => {
+        if (isAnimating) return;
+
+        navSwitch.classList.toggle('active');
         const isHidden = getComputedStyle(header).display === 'none';
 
         if (isHidden) {
-            // Make it render first, then fade in.
             header.style.display = 'block';
             header.classList.remove(fadeOutClass);
             header.classList.add(fadeInClass);
         } else {
-            // Fade out, then hide after animation ends.
             header.classList.remove(fadeInClass);
             header.classList.add(fadeOutClass);
         }
+
+        isAnimating = true;
     });
 
     header.addEventListener('animationend', (event) => {
@@ -27,5 +31,6 @@
             header.style.display = 'none';
             header.classList.remove(fadeOutClass);
         }
+        isAnimating = false;
     });
 });
