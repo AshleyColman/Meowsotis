@@ -10,7 +10,7 @@
   height: auto;
   display: none;
   z-index: inherit;
-  animation: bounce-mobile 10s ease-in-out infinite,  fade-in-out-desktop 5s ease-in infinite;
+  animation: bounce-mobile 10s ease-in-out infinite, fade-in-out 5s ease-in infinite;
   will-change: transform, filter;
 }
 
@@ -53,7 +53,7 @@
     max-width: 850px;
     display: none;
     z-index: inherit;
-    animation: bounce-desktop 3.5s ease-in-out infinite, fade-in-out-desktop 5s ease-in infinite;
+    animation: bounce-desktop 3.5s ease-in-out infinite, fade-in-out 5s ease-in infinite;
   }
 }
 
@@ -68,7 +68,7 @@
   }
 }
 
-@keyframes fade-in-out-desktop {
+@keyframes fade-in-out {
   0% {
     opacity: 0;
   }
