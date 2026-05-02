@@ -7,7 +7,15 @@
     if (!translateTextButtons || !englishTextElements || !japaneseTextElements) {
         return;
     }
+        
+    function hideJapaneseTextOnStartup(){
+        japaneseTextElements.forEach((element) => {
+            element.style.display = 'none';
+        });
+    }
 
+    hideJapaneseTextOnStartup();
+        
     let isJapanese = false;
 
     Array.from(translateTextButtons).forEach((button) => {
@@ -15,11 +23,13 @@
             isJapanese = !isJapanese;
 
             japaneseTextElements.forEach((element) => {
-                element.style.display = isJapanese ? 'block' : 'none';
+                const displayStyle = element.getAttribute('data-display') || 'block';
+                element.style.display = isJapanese ? displayStyle : 'none';
             });
 
             englishTextElements.forEach((element) => {
-                element.style.display = isJapanese ? 'none' : 'block';
+                const displayStyle = element.getAttribute('data-display') || 'block';
+                element.style.display = isJapanese ? 'none' : displayStyle;
             });
         });
     });

@@ -1295,7 +1295,6 @@ textarea {
   margin-right: 0.5rem;
   color: #9EFF9B;
   font-size: 1.5rem;
-  font-size: 1.5rem;
   -webkit-text-stroke: 1.5px #000;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -1305,7 +1304,6 @@ textarea {
   font-weight: 900;
   margin-right: 0.5rem;
   color: #FF9B9B;
-  font-size: 1.5rem;
   font-size: 1.5rem;
   -webkit-text-stroke: 1.5px #000;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -1486,14 +1484,6 @@ textarea {
 }
 
 #japanese-text {
-  display: none;
-}
-
-.english-text {
-  display: block;
-}
-
-.japanese-text {
   display: none;
 }
 
