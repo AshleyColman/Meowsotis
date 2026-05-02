@@ -1479,14 +1479,6 @@ textarea {
     padding: 0;
   }
 }
-#english-text {
-  display: flex;
-}
-
-#japanese-text {
-  display: none;
-}
-
 .translate-text-button {
   font-size: 2rem;
   color: #000000;

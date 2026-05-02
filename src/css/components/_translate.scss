@@ -1,13 +1,5 @@
 ﻿@use '../abstracts/variables' as *;
 
-#english-text {
-  display: flex;
-}
-
-#japanese-text {
-  display: none;
-}
-
 .translate-text-button {
   font-size: $fs-2xl;
   color: $black-color;
