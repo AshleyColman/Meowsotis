@@ -1,0 +1,39 @@
+﻿@use '../abstracts/variables' as *;
+
+#english-text {
+  display: flex;
+}
+
+#japanese-text {
+  display: none;
+}
+
+.english-text {
+  display: block;
+}
+
+.japanese-text {
+  display: none;
+}
+
+.translate-text-button {
+  font-size: $fs-2xl;
+  color: $black-color;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: transform $dur-normal $ease-standard, color $dur-normal $ease-standard;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: translateY(1px) scale(0.94);
+    transition-duration: $dur-press;
+  }
+}
