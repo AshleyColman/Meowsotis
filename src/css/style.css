@@ -1018,7 +1018,6 @@ textarea {
   z-index: 90;
   opacity: 1;
   background-color: #FFFFFF;
-  overflow: hidden;
 }
 
 .header-container {
@@ -1036,7 +1035,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(1rem, 3vh, 2rem);
+  gap: clamp(0.2rem, 1vh, 2rem);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1078,7 +1077,7 @@ textarea {
 }
 
 .nav-item-text {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -1107,6 +1106,9 @@ textarea {
 @media (min-width: 1024px) {
   .nav-menu {
     gap: 0.25rem;
+  }
+  .nav-item-text {
+    font-size: 1.5rem;
   }
 }
 .portfolio-container {

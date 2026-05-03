@@ -84,7 +84,6 @@
   z-index: $z-header;
   opacity: 1;
   background-color: $white-color;
-  overflow: hidden;
 }
 
 .header-container {
@@ -102,7 +101,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(1rem, 3vh, 2rem);
+  gap: clamp(0.2rem, 1vh, 2rem);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -150,7 +149,7 @@
 }
 
 .nav-item-text {
-  font-size: $fs-xl;
+  font-size: $fs-lg;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -183,5 +182,9 @@
   
   .nav-menu {
     gap: 0.25rem;
+  }
+
+  .nav-item-text {
+    font-size: $fs-xl;
   }
 }
