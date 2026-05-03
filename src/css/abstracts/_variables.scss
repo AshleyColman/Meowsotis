@@ -13,9 +13,7 @@ $pastel-blue-color: mix($blue-color, $white-color, 70%);
 $pastel-purple-color:  mix($purple-color, $white-color, 70%);
 
 $bg-gradient: linear-gradient(135deg, $blue-color, $pink-color-1, $purple-color);
-
 $pastel-bg-gradient: linear-gradient(135deg, $pastel-blue-color, $pastel-pink-color, $pastel-purple-color);
-
 
 $white-shadow: drop-shadow(10px 10px 0 $white-color);
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -38,6 +36,7 @@ $z-text: 70;
 $z-portfolio: 80;
 $z-about: 81;
 $z-terms: 82;
+$z-downloads: 83;
 $z-header: 90;
 $z-nav: 100;
 $z-modelviewer: 105;
