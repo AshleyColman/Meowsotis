@@ -9,11 +9,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.no-scroll-mobile-only {
-  overflow: hidden;
-  height: 100%;
-}
-
 .fadeIn {
   animation: fadeIn 0.5s ease-in-out forwards;
 }
@@ -38,14 +33,4 @@
   to {
     opacity: 0;
   }
-}
-
-/* Desktop */
-@media (min-width: $bp-lg) {
-  
-  .no-scroll-mobile-only {
-    overflow: initial;
-    height: initial;
-  }
-  
 }
