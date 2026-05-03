@@ -1463,6 +1463,10 @@ textarea {
 .footer-downloads {
   margin-top: 0;
 }
+.footer .footer-text {
+  font-size: 0.75rem;
+  color: #FFFFFF;
+}
 
 /* Desktop */
 @media (min-width: 1024px) {
