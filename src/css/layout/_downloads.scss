@@ -92,7 +92,6 @@
   }
 }
 
-
 .download-text-top {
   width: 100%;
   padding: 1rem 0 2rem 0;
@@ -114,33 +113,4 @@
   font-size: $fs-lg;
   text-align: center;
   color: $white-color;
-}
-
-.download-icon {
-  color: $social-icon-color;
-  -webkit-text-stroke: $social-icon-stroke;
-  text-shadow: $social-icon-shadow;
-  font-size: $fs-4xl;
-  transition: transform $dur-normal $ease-standard, color $dur-normal $ease-standard;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-
-  &:active {
-    transform: translateY(1px) scale(0.94);
-    transition-duration: $dur-press;
-  }
-
-  &:focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 4px;
-  }
-}
-
-.download-button-container {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: start;
 }
