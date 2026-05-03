@@ -7,6 +7,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 .fadeIn {
   animation: fadeIn 0.5s ease-in-out forwards;
 }
